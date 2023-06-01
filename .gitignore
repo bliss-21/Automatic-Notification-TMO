@@ -1,0 +1,33 @@
+# Ignorar archivos generados por el entorno de desarrollo
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignorar directorio virtualenv
+venv/
+
+# Ignorar archivos y directorios generados por herramientas de construcción
+build/
+dist/
+*.egg-info/
+
+# Ignorar archivos de configuración local
+*.env
+*.log
+
+# Ignorar archivos y directorios específicos del IDE
+.idea/
+.vscode/
+*.pydevproject
+
+# Ignorar archivos y directorios específicos de pruebas
+htmlcov/
+.coverage
+
+# Ignorar archivos y directorios específicos de documentación
+docs/_build/
+
+# Ignorar archivos de dependencias y paquetes
+pip-lock.txt
+requirements.txt
