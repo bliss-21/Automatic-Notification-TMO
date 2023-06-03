@@ -1,8 +1,6 @@
-from sqlalchemy import create_engine, Column, Integer, String, Date, Boolean, ForeignKey
-from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy.orm import sessionmaker, relationship
-
-Base = declarative_base()
+from sqlalchemy import Column, Integer, String, Date, Boolean, ForeignKey
+from sqlalchemy.orm import relationship
+from database import Base
 
 class Manga(Base):
     __tablename__ = 'manga'
@@ -10,6 +8,7 @@ class Manga(Base):
     titulo_manga = Column(String)
     link_manga = Column(String)
     ultimo_capitulo = Column(String)
+    link_ultimo_capitulo = Column(String)
     fecha_agregado = Column(Date)
     fecha_actualizado = Column(Date)
     activo = Column(Boolean, default=True)
@@ -26,3 +25,4 @@ class Notification(Base):
 
     manga_id = Column(Integer, ForeignKey('manga.id'))
     manga = relationship("Manga")
+

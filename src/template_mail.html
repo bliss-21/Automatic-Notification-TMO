@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+    </style>
+</head>
+<body>
+    <h1>Manga Actualizados en la semana</h1>
+    <table>
+        <tr>
+            <th>Manga</th>
+            <th>Cap</th>
+        </tr>
+        {% for notification in notifications %}
+            <tr>
+                <td>{{notification.titulo_manga}}</td>
+                <td><a href="{{ notification.link_capitulo }}">{{ notification.nombre_capitulo }}</a></td>
+            </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

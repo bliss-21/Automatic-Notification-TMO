@@ -15,6 +15,7 @@ dist/
 # Ignorar archivos de configuración local
 *.env
 *.log
+*.env.dev
 
 # Ignorar archivos y directorios específicos del IDE
 .idea/
@@ -31,3 +32,8 @@ docs/_build/
 # Ignorar archivos de dependencias y paquetes
 pip-lock.txt
 requirements.txt
+
+# Ignorar sqlite
+*.db
+
+/test
