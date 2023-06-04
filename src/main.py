@@ -1,4 +1,4 @@
-from util import add_manga_by_link, send_notificacion, get_notification_test, test_get_variables_env, send_mail
+from util import add_manga_by_link, send_notificacion, send_mail
 
 lista_mangas_temporal = ('https://lectortmo.com/library/manga/20201/houseki-no-kuni',
                          'https://lectortmo.com/library/manga/44034/blue-period',

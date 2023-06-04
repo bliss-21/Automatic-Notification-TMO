@@ -235,23 +235,3 @@ def send_notificacion():
         print("Ocurrió un error al enviar el correo:", str(e))
 
     session.close()
-
-## Funciones de pruebas
-def get_notification_test():
-    session = create_session()
-
-    notifications = session.query(Notification).filter(Notification.notificado == False).all()
-
-    for n in notifications:
-        print(f'{n.id} - {n.nombre_capitulo} :: {n.link_capitulo}')
-
-    session.close()
-    return notifications
-
-def test_get_variables_env():
-    print(DESTINATION_MAIL)
-    print(SMTP_HOST)
-    print(SMTP_PORT)
-    print(SENDER_MAIL)
-    print(SENDER_PASS_APP)
-
