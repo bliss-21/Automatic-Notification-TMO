@@ -31,7 +31,7 @@ docs/_build/
 
 # Ignorar archivos de dependencias y paquetes
 pip-lock.txt
-requirements.txt
+# requirements.txt
 
 # Ignorar sqlite
 *.db
