@@ -1,5 +1,10 @@
 # Automatic-Notification-TMO
 
+## instalar dependencias
+```
+pip install -r requirements.txt
+```
+
 ```
 DESTINATION_MAIL = destination@mail.com
 SMTP_HOST = smtp.gmail.com
