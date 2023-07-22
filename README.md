@@ -5,6 +5,7 @@
 pip install -r requirements.txt
 ```
 
+## Variables de entorno
 ```
 DESTINATION_MAIL = destination@mail.com
 SMTP_HOST = smtp.gmail.com
